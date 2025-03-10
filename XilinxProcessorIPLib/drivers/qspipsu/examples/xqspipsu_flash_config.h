@@ -51,7 +51,7 @@ extern "C" {
 
 #include "xparameters.h"	/* SDK generated parameters */
 #include "xqspipsu.h"		/* QSPIPSU device driver */
-#include "sleep.h"
+#include "sleep.h" 
 
 /************************** Constant Definitions *****************************/
 
@@ -308,6 +308,11 @@ FlashInfo Flash_Config_Table[] = {
 	/*w25q256jw*/
 	{
 		0xef8019, SECTOR_SIZE_64K, NUM_OF_SECTORS512, BYTES256_PER_PAGE,
+		0x20000, 0x2000000, 1
+	},
+        /*w25q256jw-IQ*/
+	{
+		0xef6019, SECTOR_SIZE_64K, NUM_OF_SECTORS512, BYTES256_PER_PAGE,
 		0x20000, 0x2000000, 1
 	},
 	/*w25h02jv*/
